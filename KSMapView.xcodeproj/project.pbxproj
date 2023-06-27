@@ -23,17 +23,17 @@
 /* Begin PBXFileReference section */
 		51DA0041296D942100A2DC48 /* DisplayMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayMapViewController.swift; sourceTree = "<group>"; };
 		51DA0042296D942100A2DC48 /* DisplayMapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DisplayMapViewController.xib; sourceTree = "<group>"; };
-		BD5EC6DD2927B3A400682C17 /* KSMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KSMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD5EC6DD2927B3A400682C17 /* KSMapView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KSMapView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD5EC6E02927B3A400682C17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD5EC6E42927B3A400682C17 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BD5EC6E72927B3A400682C17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BD5EC6E92927B3A600682C17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD5EC6EC2927B3A600682C17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		BD5EC6EE2927B3A600682C17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD5EC6F52927B43500682C17 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		BD5EC6F62927B43500682C17 /* MapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
 		BD79D93B2948BB00008A488D /* CustomAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnnotationView.swift; sourceTree = "<group>"; };
 		BD8D3D49292BBF6B009105E3 /* Location.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Location.gpx; sourceTree = "<group>"; };
+		C87484742A4B308900FB3B71 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +59,7 @@
 		BD5EC6DE2927B3A400682C17 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BD5EC6DD2927B3A400682C17 /* KSMap.app */,
+				BD5EC6DD2927B3A400682C17 /* KSMapView.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -76,7 +76,7 @@
 				BD5EC6E62927B3A400682C17 /* Main.storyboard */,
 				BD5EC6E92927B3A600682C17 /* Assets.xcassets */,
 				BD5EC6EB2927B3A600682C17 /* LaunchScreen.storyboard */,
-				BD5EC6EE2927B3A600682C17 /* Info.plist */,
+				C87484742A4B308900FB3B71 /* Info.plist */,
 			);
 			path = KSMap;
 			sourceTree = "<group>";
@@ -93,9 +93,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BD5EC6DC2927B3A400682C17 /* KSMap */ = {
+		BD5EC6DC2927B3A400682C17 /* KSMapView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BD5EC6F12927B3A600682C17 /* Build configuration list for PBXNativeTarget "KSMap" */;
+			buildConfigurationList = BD5EC6F12927B3A600682C17 /* Build configuration list for PBXNativeTarget "KSMapView" */;
 			buildPhases = (
 				BD5EC6D92927B3A400682C17 /* Sources */,
 				BD5EC6DA2927B3A400682C17 /* Frameworks */,
@@ -105,11 +105,11 @@
 			);
 			dependencies = (
 			);
-			name = KSMap;
+			name = KSMapView;
 			packageProductDependencies = (
 			);
 			productName = TestMap;
-			productReference = BD5EC6DD2927B3A400682C17 /* KSMap.app */;
+			productReference = BD5EC6DD2927B3A400682C17 /* KSMapView.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -127,7 +127,7 @@
 					};
 				};
 			};
-			buildConfigurationList = BD5EC6D82927B3A400682C17 /* Build configuration list for PBXProject "KSMap" */;
+			buildConfigurationList = BD5EC6D82927B3A400682C17 /* Build configuration list for PBXProject "KSMapView" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -137,13 +137,12 @@
 			);
 			mainGroup = BD5EC6D42927B3A400682C17;
 			packageReferences = (
-				5162F148296EE8CC0078667F /* XCRemoteSwiftPackageReference "swift-algorithms" */,
 			);
 			productRefGroup = BD5EC6DE2927B3A400682C17 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BD5EC6DC2927B3A400682C17 /* KSMap */,
+				BD5EC6DC2927B3A400682C17 /* KSMapView */,
 			);
 		};
 /* End PBXProject section */
@@ -321,7 +320,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TestMap/Info.plist;
+				INFOPLIST_FILE = KSMap/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = KSMap;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -350,7 +349,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TestMap/Info.plist;
+				INFOPLIST_FILE = KSMap/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = KSMap;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -374,7 +373,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BD5EC6D82927B3A400682C17 /* Build configuration list for PBXProject "KSMap" */ = {
+		BD5EC6D82927B3A400682C17 /* Build configuration list for PBXProject "KSMapView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BD5EC6EF2927B3A600682C17 /* Debug */,
@@ -383,7 +382,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BD5EC6F12927B3A600682C17 /* Build configuration list for PBXNativeTarget "KSMap" */ = {
+		BD5EC6F12927B3A600682C17 /* Build configuration list for PBXNativeTarget "KSMapView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BD5EC6F22927B3A600682C17 /* Debug */,
@@ -393,17 +392,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		5162F148296EE8CC0078667F /* XCRemoteSwiftPackageReference "swift-algorithms" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/apple/swift-algorithms.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = BD5EC6D52927B3A400682C17 /* Project object */;
 }
