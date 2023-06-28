@@ -19,25 +19,20 @@ class ViewController: UIViewController {
             UIView.animate(withDuration: 0.05, animations: {
                 self.expandOrColapse(self.currentState)
             })
-                
-            
-                
         }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         let tap = UITapGestureRecognizer(target: self, action: #selector(self.handleTap(_:)))
         self.mapView.addGestureRecognizer(tap)
         controller.view.frame  = mapView.bounds
         self.mapView.insertSubview(controller.view, belowSubview: backButton)
         addChild(controller)
         controller.didMove(toParent: self)
-        //currentState = .collapse
-       
     }
- 
+    
     private func expandOrColapse(_ currentState: ExpandAndColapse) {
         switch currentState {
         case .expand:

@@ -19,6 +19,7 @@ class DisplayMapViewController: UIViewController {
         addChild(controller)
         controller.view.frame = self.view.bounds
        // self.view.addSubview((controller.view)!)
+        backButton.setTitle("Back", for: .normal)
         self.view.insertSubview((controller.view)!, belowSubview: backButton)
 
         controller.didMove(toParent: self)
